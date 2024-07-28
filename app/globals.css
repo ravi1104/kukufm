@@ -97,7 +97,6 @@ a {
   display: none;
 } */
 
-/* pages/index.module.css */
 .container {
   padding: 0;
   margin: 0;
@@ -109,9 +108,6 @@ a {
   /* to avoid the fixed header overlap */
 }
 
-/* globals.css or specific stylesheet */
-/* globals.css or specific stylesheet */
-/* globals.css or specific stylesheet */
 .quote {
   padding: 50px 20px;
   text-align: center;
