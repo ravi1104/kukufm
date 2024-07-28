@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from './InfiniteScroll.module.css';
+import styles from './Infinitescroll.module.css';
 import { FaPlay } from 'react-icons/fa';
 
 export default function InfiniteScroll({ initialItems }) {
