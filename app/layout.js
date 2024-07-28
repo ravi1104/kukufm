@@ -7,7 +7,7 @@ export const metadata = {
   title: "KukuFM Landing Page",
   description: "Discover the latest and greatest in music with KukuFM. Explore categories like Motivation, Horror, Love, New Releases, and more.",
   keywords: "KukuFM, music, Motivation, Horror, Love, New Releases, Top Hits, Classics",
-  author: "Your Name or Company",
+  author: "KukuFm RR",
   openGraph: {
     title: "KukuFM Landing Page",
     description: "Discover the latest and greatest in music with KukuFM. Explore categories like Motivation, Horror, Love, New Releases, and more.",
@@ -17,10 +17,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourtwitterhandle",
+    site: "@KukuFMOfficial",
     title: "KukuFM Landing Page",
     description: "Discover the latest and greatest in music with KukuFM. Explore categories like Motivation, Horror, Love, New Releases, and more.",
-    image: "/images/twitter-image.jpg"
+    image: "/images/twitter.jpg"
   }
 };
 

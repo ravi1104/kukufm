@@ -25,7 +25,6 @@ const Carousel = ({ slides }) => {
                             src={slide.image}
                             alt={slide.title}
                             fill
-                            priority
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                         {slide.title && <p className={styles.title}>{slide.title}</p>}
