@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  background-color: #f0f0f0;
   padding: 15px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -51,7 +51,8 @@
   padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
-  background: black;
+  background: #ccc;
+  color: black;
   transition: border-color 0.3s ease;
 }
 
@@ -64,10 +65,11 @@
 }
 
 .searchSection input {
-  border: 2px solid #ccc;
+  background-color: #ccc;
   padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
+  color: black;
   transition: border-color 0.3s ease;
 }
 
@@ -118,4 +120,51 @@
 .authButtons .signup:hover {
   background: linear-gradient(135deg, #d500f9, #c72c77);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .nav,
+  .headerExtras {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 24px;
+    width: 20px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #f0f0f0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 1001;
+  }
+
+  .mobileMenu a {
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    text-align: right;
+    transition: color 0.3s ease;
+  }
+
+  .mobileMenu a:hover {
+    color: #0070f3;
+  }
 }

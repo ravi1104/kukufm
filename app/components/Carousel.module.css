@@ -38,3 +38,41 @@
   height: 12px;
   display: inline-block;
 }
+
+
+@media (max-width: 768px) {
+
+  .carouselContainer,
+  .slide {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .carouselContainer,
+  .slide {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .title {
+    font-size: 0.8rem;
+    padding: 3px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+}

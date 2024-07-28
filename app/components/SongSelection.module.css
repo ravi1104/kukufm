@@ -2,25 +2,25 @@
     padding: 30px;
     margin: 80px auto;
     border-radius: 12px;
-}
-
-.title {
+  }
+  
+  .title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
     color: whitesmoke;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.grid {
+  }
+  
+  .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
-
-.card {
+  }
+  
+  .card {
     position: relative;
     width: 220px;
     height: 160px;
@@ -29,20 +29,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image {
+  }
+  
+  .image {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.overlay {
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,17 +55,68 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 12px;
-}
-
-.card:hover .overlay {
+  }
+  
+  .card:hover .overlay {
     opacity: 1;
-}
-
-.categoryName {
+  }
+  
+  .categoryName {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+  }
+  
+  @media (max-width: 768px) {
+    .songSelection {
+      padding: 20px;
+      margin: 40px auto;
+    }
+  
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .grid {
+      gap: 15px;
+    }
+  
+    .card {
+      width: 180px;
+      height: 130px;
+    }
+  
+    .categoryName {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .songSelection {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .grid {
+      gap: 10px;
+    }
+  
+    .card {
+      width: 140px;
+      height: 100px;
+    }
+  
+    .categoryName {
+      font-size: 14px;
+    }
+  }
+  

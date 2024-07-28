@@ -1,12 +1,19 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <header className={styles.header}>
             <div className={styles.logo}>KukuFM</div>
-            <nav className={styles.nav}>
+            <nav className={`${styles.nav} ${menuOpen ? styles.active : ''}`}>
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
                 <Link href="/contact">Contact</Link>
@@ -27,6 +34,17 @@ const Header = () => {
                     <Link href="/signup" className={styles.signup}>Sign Up</Link>
                 </div>
             </div>
+            {menuOpen && (
+                <div className={styles.mobileMenu}>
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contact</Link>
+                    <Link href="/signin">Sign In</Link>
+                    <Link href="/signup">Sign Up</Link>
+                </div>
+            )}
+            <div className={styles.menuIcon} onClick={toggleMenu}>&#8942;</div>
+
         </header>
     );
 };
