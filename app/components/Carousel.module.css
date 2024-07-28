@@ -1,0 +1,40 @@
+.carouselContainer {
+  margin: 50px auto;
+  width: 40vw;
+  height: 80vh;
+}
+
+.slide {
+  position: relative;
+  width: 40vw;
+  height: 80vh;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.customDot {
+  background: transparent;
+}
+
+.dot {
+  background: #333;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}

@@ -1,0 +1,121 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+  color: black;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  flex: 1;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.headerExtras {
+  display: flex;
+  align-items: center;
+}
+
+.languageSelect {
+  margin-right: 30px;
+}
+
+.languageSelect select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: black;
+  transition: border-color 0.3s ease;
+}
+
+.languageSelect select:focus {
+  outline: none;
+}
+
+.searchSection {
+  margin-right: 30px;
+}
+
+.searchSection input {
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.searchSection input:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.authButtons {
+  display: flex;
+  align-items: center;
+}
+
+.authButtons a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.authButtons .signin {
+  margin-right: 15px;
+  background: linear-gradient(135deg, #0070f3, #0056b3);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.authButtons .signup {
+  background: linear-gradient(135deg, #ff6f61, #d500f9);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.authButtons a:hover {
+  opacity: 0.9;
+}
+
+.authButtons .signin:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.authButtons .signup:hover {
+  background: linear-gradient(135deg, #d500f9, #c72c77);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
